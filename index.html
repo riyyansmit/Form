@@ -1,189 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Online Academy </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background:rgb(255, 255, 255);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
- 
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saylani Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 500px;
-             border: 1px solid;
-  
-  box-shadow: 5px 10px 8px 10px #888888;
-            
-            
-        }
+    nav {
+      background-color: #3df14c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 40px;
+    }
 
-        h1 {
-            text-align: center;
-            color: #333;
-        }
+    nav img {
+      height: 60px;
+    }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #000000;
-            font-family: serif;
+    nav ul li {
+      margin: 0 15px;
+    }
 
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
 
-        input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        h3 {
-            margin-left: 130px;
-        }
-
-        h2 {
-            margin-left: 130px;
-        }
-
-        .gender-options {
-            display: flex;
-            gap: 20px;
-        }
-
-        .male,
-        .female {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-
-        }
-    </style>
+    nav ul li a:hover {
+      background-color: #2ccf3d;
+    }
+    .s {
+        width: 0px;
+        display: flex;
+    }
+    p {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+    #a {
+        width: 550px;
+        height: 300px;
+        margin-top: 10px;
+    }
+  </style>
+  <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
 </head>
-
 <body>
-<form action="form_submit.html">
-
-    <div class="container">
-        
-        <h3> <img src="images.png" alt=""></h3>
-        <h2>Saylani Online Academy </h2>
-        <form>
-            <div class="form-group">
-                <label>First Name</label>
-                <input type="text" placeholder="First Name" required>
-            </div>
-            <div class="form-group">
-                <label>Father Name</label>
-                <input type="text" placeholder="Father Name" required>
-            </div>
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" placeholder="Enter the Password" required>
-            </div>
-            <div class="form-group">
-                <label>Physical Address</label>
-                <input type="text" placeholder="Address">
-            </div>
-
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="gender-options">
-                    <label class="male">
-                        <input type="radio" name="gender" value="male"> Male
-                    </label>
-                    <label class="female">
-                        <input type="radio" name="gender" value="female"> Female
-                    </label>
-                </div>
-            </div>
-
-             <div class="form-group">
-                <label>Languages</label>
-                <div class="gender-options">
-                    <label class="male">
-                        <input type="checkbox" name="gender" value="English">English
-                    </label>
-                    <label class="female">
-                        <input type="checkbox" name="gender" value="Urdu"> Urdu
-                    </label>
-                </div>
-            </div>
-
-            
-
-            <div class="form-group">
-                <label>Mobile No</label>
-                <input type="tel" placeholder="Mobile Number">
-            </div>
-            <div class="form-group">
-                <label>City</label>
-                <select name="" id="">
-                    <option value="Select City" disabled>Select City</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Karachi">Karachi</option>
-                    <option value="Lahore">Lahore</option>
-                    <option value="Quetta">Quetta</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Hobbies</label>
-                <select name="" id="" multiple>
-
-                    <option value="Cricket">Cricket</option>
-                    <option value="Hokey">Hokey</option>
-                    <option value="Football">Football</option>
-                    <option value="Tenis">Tenis</option>
-                    <option value="Cricket">Cricket</option>
-                    <option value="Hokey">Hokey</option>
-                    <option value="Football">Football</option>
-                    <option value="Tenis">Tenis</option>
-                </select>
-
-            </div>
-            <div class="form-group">
-                <label>Picture Upload</label>
-                <input type="file">
-
-            </div>
-            <button type="submit">Submit Form</button>
-        </form>
+  <nav>
+    <img  src="images.png" alt="Logo" />
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="form.html">Admission Now</a></li>
+    </ul>
+  </nav>
+  <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1300px;margin:0px auto 6px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/1244721_1551274_z_akhbar.jpg" alt="1244721_1551274_z_akhbar"  title="1244721_1551274_z_akhbar" />
+                </li>
+                <li><img src="images/image.jpg" alt="image"  title="image" />
+                </li>
+                <li><img src="images/services-education-mass-it-image.jpg" alt="services-education-mass-it-image"  title="services-education-mass-it-image" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/1244721_1551274_z_akhbar-tn.jpg" alt="1244721_1551274_z_akhbar" title="1244721_1551274_z_akhbar" /></li>
+                <li><img src="images/image-tn.jpg" alt="image" title="image" /></li>
+                <li><img src="images/services-education-mass-it-image-tn.jpg" alt="services-education-mass-it-image" title="services-education-mass-it-image" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Slideshow">Responsive jQuery Slideshow</a></div>
+        </div>
     </div>
-</form>
+    <marquee style="margin-top: 40px;"  direction="" scrollamount="20" onmouseenter="stop()"onmouseleave=start()> <h1> Saylani Mass IT Training Program</h1> </marquee>
+<p>
+    <img  src="services-education-mass-it-image.jpg" alt="" srcset="" width="600px">
+    
+Saylani Mass IT Training Program offers free or affordable IT education. It teaches computer basics to advanced skills. People from different backgrounds can join.
 
+Saylani Web and App development course graduates are employed in major tech companies in Pakistan. Some are freelancing, while others have started their own businesses.
+
+The program focuses on practical learning. Students solve real problems. They learn teamwork and communication too.
+
+Graduates become skilled IT professionals. They can find good jobs. The program helps communities grow.Saylani Mass IT Training Program offers free or affordable IT education. It teaches computer basics to advanced skills. People from different backgrounds can join.
+
+Saylani Web and App development course graduates are employed in major tech companies in Pakistan. Some are freelancing, while others have started their own businesses.
+
+The program focuses on practical learning. Students solve real problems. They learn teamwork and communication too.
+
+Graduates become skilled IT professionals. They can find good jobs. The program helps communities growSaylani Mass IT Training Program offers free or affordable IT education. It teaches computer basics to advanced skills. People from different backgrounds can join.
+
+Saylani Web and App development course graduates are employed in major tech companies in Pakistan. Some are freelancing, while others have started their own businesses.
+
+The program focuses on practical learning. Students solve real problems. They learn teamwork and communication too.
+
+Graduates become skilled IT professionals. They can find good jobs. The program helps communities growSaylani Mass IT Training Program offers free or affordable IT education. It teaches computer basics to advanced skills. People from different backgrounds can join.
+
+Saylani Web and App development course graduates are employed in major tech companies in Pakistan. Some are freelancing, while others have started their own businesses.
+
+The program focuses on practical learning. Students solve real problems. They learn teamwork and communication too.
+
+Graduates become skilled IT professionals. They can find good jobs. The program helps communities grow
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae tempora quis quibusdam voluptatibus reiciendis voluptas sint iste debitis earum voluptate, laboriosam totam deserunt temporibus voluptatum? Rem consequuntur laudantium at quibusdam facere aperiam deserunt aspernatur natus illo officia fuga nam autem, dicta ab tempora, nisi repellat! Sequi ex facere quae accusantium aspernatur harum! Quibusdam accusamus eos amet reiciendis sapiente, commodi dolorem exercitationem minus officiis provident obcaecati vitae minima tenetur officia, eveniet hic assumenda quam ea nostrum quae. Officiis tempore soluta in, nobis consequatur assumenda totam odit perspiciatis harum esse delectus id, nemo inventore provident iure veniam atque voluptate eos sed neque voluptatem veritatis magni autem! Magnam dicta provident autem, porro sint optio non est totam perferendis dolor rerum excepturi amet.
+</p>
+<br><br>
+<br>
+<hr style="border: 2px solid rgb(1, 228, 103);">
+<p> orem ipsum, dolor sit amet consectetur adipisicing elit. Iusto accusamus fugit cupiditate, corporis non impedit vero a! Consequatur tenetur vero quo reiciendis quis totam odio cupiditate dolorem itaque, tempore sunt!
+Debitis rem, animi facere, vero labore ducimus voluptas cupiditate, dolor soluta maiores praesentium inventore sit. Dolor, nemo adipisci provident soluta exercitationem harum ea voluptates. Excepturi laboriosam inventore deserunt reprehenderit sequi?
+Voluptates expedita nihil vitae natus amet. Optio dolor magni perferendis quisquam dolores. Impedit ea sunt enim? Aliquid excepturi nemo, inventore, cumque quasi ipsa libero quia cum natus cupiditate repudiandae voluptatum!
+Placeat libero expedita veritatis voluptate eius dolorum eveniet. Molestias libero aspernatur molestiae, aliquid, doloremque magni neque sequi architecto, pariatur omnis quo tempora nihil! Ullam ipsa aliquam doloremque distinctio nihil possimus!
+Commodi, ad? Qui sit id ratione perspiciatis earum nulla. Nemo nisi autem magnam ipsum tempore assumenda distinctio impedit? Quaerat corrupti expedita soluta praesentium. Natus minima sapiente impedit numquam velit voluptate?
+Fuga et ad tempore nemo earum! Totam eum voluptatem est eius doloremque dolores, blanditiis minus veritatis voluptatibus itaque pariatur sunt reiciendis deleniti in distinctio tempora, iste incidunt deserunt corrupti! Necessitatibus!
+Optio corporis sequi ut tempore amet voluptatem reiciendis quod quae facere placeat fugit eveniet repellendus voluptatum aspernatur, enim accusamus veritatis totam dolor iste illum, ullam fugiat error et. Cumque, vel.
+Debitis aliquam nemo fugiat accusamus odio temporibus ea officia saepe fuga odit corrupti voluptates expedita qui, consectetur quod, magni eveniet alias omnis deserunt numquam. Nostrum similique tenetur soluta suscipit explicabo?
+Illo vel perspiciatis commodi magnam necessitatibus officiis soluta eveniet facere rem, accusamus optio recusandae excepturi nulla assumenda, reiciendis voluptatum, dolores neque? Ex amet enim saepe eum nemo sint repellendus rem!
+Laborum quaerat laudantium inventore molestias, a porro dolorem, mollitia sapiente quia numquam voluptatem error vitae eligendi assumenda saepe maxime voluptatibus exercitationem ipsa modi! Perferendis deserunt alias aliquid quae cum ducimus?
+Quam possimus quisquam repellendus, excepturi magni numquam laboriosam tenetur? Aut quaerat quos numquam ipsa quae magnam obcaecati cum aspernatur molestiae, velit debitis non illo dolorum. Facilis ab dolorem rerum corrupti!
+Modi repudiandae ea inventore delectus molestiae id, aperiam veniam totam est facere dolore libero iste sapiente corporis corrupti voluptate aliquam autem. Cumque, repellat! Ex error molestias temporibus nemo reprehenderit veritatis! <img src="1244721_1551274_z_akhbar-tn.jpg" alt="" srcset="" width="10000px"></p>
+<h2 style="text-align: center;">Developed By Riyyan Qazi</h2>
+<br>
+<br>
 </body>
-
 </html>
